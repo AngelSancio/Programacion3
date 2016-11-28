@@ -15,46 +15,44 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Gentellela Alela! | </title>
+    <title>Sistema de Nomina | </title>
+
     <!-- Bootstrap -->
     @Styles.Render("~/Content/css")
+    <link rel="icon" href="Imagenes/favicon-194x194.ico"/>
 </head>
-<body class="login">
+<body class="login" style="background: rgba(75, 3, 234, 0.8);">
+
     <div>
         <a class="hiddenanchor" id="signup"></a>
         <a class="hiddenanchor" id="signin"></a>
-        <div class="login_wrapper">
-            <div class="animate form login_form">
+        <div class="login_wrapper" >
+            <div class="animate form login_form" id="form_id">
                 <section class="login_content">
-                        <h1>Login Form</h1>
+                        <h1>eFactoy Nómina</h1>
                     @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
                     {// esto es lo mismo que crear las etiquetas form, que si intentas acceder a otra pagina te redirecciona al login y una vez accedas por el login te guarda la url a la que intentaste acceder y entra pa ya
                        // @Html.AntiForgeryToken()// permite verificar que la persona que se esta loguiando sea la misma que va a resivir la informacion
                        // @Html.ValidationSummary(true, "", new { @class = "text-danger" })
                         <div>
-                            @Html.TextBoxFor(m => m.Email, new { @class = "form-control", placeholder = "Email", required = "" })
+                            @Html.TextBoxFor(m => m.Email, new { @class = "form-control login-input", placeholder = HttpUtility.HtmlDecode("&#xf007; Email"), style = "font-family:Arial, FontAwesome" })
                             @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
                         </div>
-                        <div>
-                             @Html.PasswordFor(m => m.Password, new { @class = "form-control", placeholder = "Password", required = "" })
-                             @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+                         <div>
+                           @Html.PasswordFor(m => m.Password, new { @class = "form-control login-input", placeholder = HttpUtility.HtmlDecode("&#xf13e; Password"), style = "font-family:Arial, FontAwesome" })
+                           @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
                         </div>
                         <div>
-                            <input type="submit" value="Log in" class="btn btn-default" />
-                            <a class="reset_pass" href="#">Lost your password?</a>
+                            <input type="submit" value="Log in" class="btn btn-primary btn-lg btn-block" id="btn"/>
+                            <!--<a class="reset_pass" href="#">Lost your password?</a>-->
                         </div>
                     }
                         <div class="clearfix"></div>
                         <div class="separator">
-                            <p class="change_link">
-                                New to site?
-                                <a href="#signup" class="to_register"> Create Account </a>
-                            </p>
-                            <div class="clearfix"></div>
+                           <div class="clearfix"></div>
                             <br />
                             <div>
-                                <h1><i class="fa fa-paw"></i> Gentelella Alela!</h1>
-                                <p>©2016 All Rights Reserved. Gentelella Alela! is a Bootstrap 3 template. Privacy and Terms</p>
+                                <p>©2016 eFactory</p>
                             </div>
                         </div>
                 </section>
@@ -63,6 +61,20 @@
         </div>
     </div>
 </body>
+<style>
+    #form_id{
+   background: rgba(0, 0, 64, 0.4);
+   border-radius: 10px;
+   padding: 10%;
+   color: white;
+  margin: auto;
+    }
+    #btn{
+        margin: auto;
+
+    }
+
+</style>
 </html>
 
 

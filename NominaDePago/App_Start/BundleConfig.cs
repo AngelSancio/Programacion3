@@ -25,12 +25,18 @@ namespace IdentitySample
                       "~/Scripts/nprogress.js",
                       "~/Scripts/custom.js"));
 
+            bundles.Add(new ScriptBundle("~/bundles/datatable").Include(
+                     "~/Scripts/dataTables.bootstrap.js",
+                     "~/Scripts/jquery.dataTables.js"));
+
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/font-awesome.min.css",
                       "~/Content/nprogress.css",
                       "~/Content/animate.min.css",
                       "~/Content/custom.css",
+                      "~/Content/jquery.dataTables.css",
+                      "~/Content/dataTables.bootstrap.css",
                       "~/Content/site.css"));
         }
     }

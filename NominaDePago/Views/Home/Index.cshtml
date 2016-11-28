@@ -2,13 +2,139 @@
     ViewBag.Title = "Home Page";
 }
 
-<div class="jumbotron">
+@*<div class="jumbotron">
     <h1>ASP.NET Identity</h1>
     <p class="lead">ASP.NET Identity is the membership system for ASP.NET apps. Following are the features of ASP.NET Identity in this sample application.</p>
     <p><a href="http://www.asp.net/identity" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
-</div>
+</div>*@
 
-<div class="row">
+<html lang="en">
+<head>
+   
+</head>
+<body>
+    <div class="row">
+           <div class="col-lg-6">
+            <div class="input-group">
+                <input type="text" class="form-control">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span> Buscar</button>
+                </span>
+            </div>
+        </div>
+    </div>
+    @*<nav class="navbar navbar-default" role="navigation">
+        <!-- El logotipo y el icono que despliega el menú se agrupan
+             para mostrarlos mejor en los dispositivos móviles -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Desplegar navegación</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Logotipo</a>
+        </div>
+
+        <!-- Agrupar los enlaces de navegación, los formularios y cualquier
+             otro elemento que se pueda ocultar al minimizar la barra -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Buscar empleado</a></li>
+                <li><a href="#">Enlace #2</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        Menú #1 <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Acción #1</a></li>
+                        <li><a href="#">Acción #2</a></li>
+                        <li><a href="#">Acción #3</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Acción #4</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Acción #5</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <form class="navbar-form navbar-left" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Buscar">
+                </div>
+                <button type="submit" class="btn btn-default">Buscar</button>
+            </form>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Enlace #3</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        Menú #2 <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Acción #1</a></li>
+                        <li><a href="#">Acción #2</a></li>
+                        <li><a href="#">Acción #3</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Acción #4</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>*@
+    <div class="container">
+       
+
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                    <th>Email</th>
+                    <th>Telephone</th>
+                    <th>Cuenta de banco</th>
+                    <th>Dirección</th>
+                    <th>Fecha de Nacimiento</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                    <td>555555555</td>
+                    <td>0158515152</td>
+                    <td>Villa Olimpica </td>
+                    <td>12-09-98</td>
+                </tr>
+                <tr>
+                    <td>Mary</td>
+                    <td>Moe</td>
+                    <td>mary@example.com</td>
+                    <td>555555555</td>
+                    <td>0158515152</td>
+                    <td>Villa Olimpica </td>
+                    <td>12-09-98</td>
+                </tr>
+                <tr>
+                    <td>July</td>
+                    <td>Dooley</td>
+                    <td>july@example.com</td>
+                    <td>555555555</td>
+                    <td>0158515152</td>
+                    <td>Villa Olimpica </td>
+                    <td>12-09-98</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+</body>
+</html>
+
+@*<div class="row">
     <div class="col-md-4">
         <dl>
             <dt>Initialize ASP.NET Identity</dt>
@@ -229,4 +355,4 @@
             </dd>
         </dl>
     </div>
-</div>
+</div>*@
