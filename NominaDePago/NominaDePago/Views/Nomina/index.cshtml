@@ -1,0 +1,92 @@
+﻿
+@{
+    ViewBag.Title = "Nomina de empleados";
+}
+
+<h2>Nomina</h2>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+</head>
+<body>
+    <div class="row">
+        <div class="col-md-9" style="text-align: center;">
+           <h3> Agregar nómina del empleado</h3>
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Asignaciones</h5>
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="email">Bono Transporte:</label>
+                            <div class="col-sm-10">
+                                <input type="number" class="form-control" id="email" placeholder=" ">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="pwd">Bono Alimenticio</label>
+                            <div class="col-sm-10">
+                                <input type="number" class="form-control" id="pwd" placeholder=" ">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="pwd">Horas extras</label>
+                            <div class="col-sm-10">
+                                <input type="number" class="form-control" id="pwd" placeholder=" ">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="pwd">Total de asignaciones</label>
+                            <div class="col-sm-10">
+                                <input type="number" class="form-control" id="pwd" placeholder="">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-2 col-sm-10">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <h5>Deducciones</h5>
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="email">Seguro</label>
+                            <div class="col-sm-10">
+                                <input type="number" class="form-control" id="email" placeholder="">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="pwd">Pension</label>
+                            <div class="col-sm-10">
+                                <input type="number" class="form-control" id="pwd" placeholder="">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="pwd">Total deducciones </label>
+                            <div class="col-sm-10">
+                                <input type="number" class="form-control" id="pwd" placeholder="">
+                            </div>
+                        </div>
+                    </form>
+                    <div class="form-group">
+                        <label class="control-label col-sm-2" for="pwd">Salario a pagar</label>
+                        <div class="col-sm-10">
+                            <input type="number" class="form-control" placeholder="" disabled>
+                        </div>
+                    </div>
+                    <input type="submit" class="btn btn-primary" value="Ver resumen" style="margin-top: 5%; ">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+@section Scripts{
+    @Scripts.Render("~/Content/css")
+
+
+
+}
+

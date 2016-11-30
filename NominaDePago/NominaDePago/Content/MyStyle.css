@@ -1,0 +1,27 @@
+﻿
+
+#container {
+    width: 70%;
+    height: auto;
+    padding: 10%;
+    margin: auto;
+    color: black;
+    font-size: 22px;
+    background-color: #efedea;
+}
+#container > h1{
+    text-align: center;
+    margin-bottom: 10%;
+
+}
+
+#AplicarBtn{
+    width: auto;
+}
+h1{
+    background-color: red;
+}
+h5{
+    margin-bottom: 10%;
+
+}
