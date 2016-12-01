@@ -213,12 +213,16 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\buttons.bootstrap.min.css" />
     <Content Include="Content\custom.css" />
     <Content Include="Content\dataTables.bootstrap.css" />
+    <Content Include="Content\fixedHeader.bootstrap.css" />
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\jquery.dataTables.css" />
     <Content Include="Content\MyStyle.css" />
     <Content Include="Content\nprogress.css" />
+    <Content Include="Content\responsive.bootstrap.css" />
+    <Content Include="Content\scroller.bootstrap.min.css" />
     <Content Include="Controllers\fonts\fontawesome-webfont.svg" />
     <Content Include="Controllers\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Controllers\fonts\glyphicons-halflings-regular.woff" />
@@ -251,8 +255,17 @@
     <Content Include="images\sort_desc_disabled.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\buttons.bootstrap.min.js" />
+    <Content Include="Scripts\buttons.flash.js" />
+    <Content Include="Scripts\buttons.html5.min.js" />
+    <Content Include="Scripts\buttons.print.min.js" />
     <Content Include="Scripts\custom.js" />
     <Content Include="Scripts\dataTables.bootstrap.js" />
+    <Content Include="Scripts\dataTables.buttons.js" />
+    <Content Include="Scripts\dataTables.fixedHeader.js" />
+    <Content Include="Scripts\dataTables.keyTable.js" />
+    <Content Include="Scripts\dataTables.responsive.js" />
+    <Content Include="Scripts\dataTables.scroller.js" />
     <Content Include="Scripts\fastclick.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -263,10 +276,14 @@
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\jszip.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\nprogress.js" />
+    <Content Include="Scripts\pdfmake.min.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\responsive.bootstrap.js" />
+    <Content Include="Scripts\vfs_fonts.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -289,6 +306,14 @@
     <Compile Include="Migrations\201611110033059_InitialCreate.Designer.cs">
       <DependentUpon>201611110033059_InitialCreate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201611302318526_Adding employees.cs" />
+    <Compile Include="Migrations\201611302318526_Adding employees.Designer.cs">
+      <DependentUpon>201611302318526_Adding employees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201612010104583_Adding nomina table.cs" />
+    <Compile Include="Migrations\201612010104583_Adding nomina table.Designer.cs">
+      <DependentUpon>201612010104583_Adding nomina table.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\AdminViewModel.cs" />
@@ -296,7 +321,7 @@
     <Compile Include="Models\EmpleadoModel.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
-    <Compile Include="Models\nomina.cs" />
+    <Compile Include="Models\Nomina.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -342,8 +367,12 @@
     <Content Include="Views\Account\ExternalLoginConfirmation.cshtml" />
     <Content Include="Views\Account\DisplayEmail.cshtml" />
     <Content Include="Views\Account\ConfirmEmail.cshtml" />
-    <Content Include="Views\Empleado\Index.cshtml" />
     <Content Include="Views\Nomina\index.cshtml" />
+    <Content Include="Views\Empleado\Create.cshtml" />
+    <Content Include="Views\Empleado\Delete.cshtml" />
+    <Content Include="Views\Empleado\Details.cshtml" />
+    <Content Include="Views\Empleado\Edit.cshtml" />
+    <Content Include="Views\Empleado\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -357,6 +386,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201611110033059_InitialCreate.resx">
       <DependentUpon>201611110033059_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201611302318526_Adding employees.resx">
+      <DependentUpon>201611302318526_Adding employees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201612010104583_Adding nomina table.resx">
+      <DependentUpon>201612010104583_Adding nomina table.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

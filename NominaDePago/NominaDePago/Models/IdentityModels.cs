@@ -36,5 +36,8 @@ namespace IdentitySample.Models
         {
             return new ApplicationDbContext();
         }
+
+        public DbSet<NominaDePago.Models.EmpleadoModel> EmpleadoModels { get; set; }
+        public DbSet<NominaDePago.Models.Nomina> Nomina { get; set; }// Los DBSet crea y maneja las tablas
     }
 }

@@ -26,19 +26,35 @@ namespace IdentitySample
                       "~/Scripts/custom.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/datatable").Include(
+                     "~/Scripts/jquery.dataTables.js",
                      "~/Scripts/dataTables.bootstrap.js",
-                     "~/Scripts/jquery.dataTables.js"));
+                     "~/Scripts/dataTables.buttons.js",
+                     "~/Scripts/buttons.bootstrap.min.js",
+                     "~/Scripts/buttons.flash.js",
+                     "~/Scripts/buttons.html5.min.js",
+                     "~/Scripts/buttons.print.min.js",
+                     "~/Scripts/dataTables.fixedHeader.js",
+                     "~/Scripts/dataTables.keyTable.js",
+                     "~/Scripts/dataTables.responsive.js",
+                     "~/Scripts/responsive.bootstrap.js",
+                     "~/Scripts/datatables.scroller.js",
+                     "~/Scripts/jszip.js",
+                     "~/Scripts/pdfmake.min.js",
+                     "~/Scripts/vfs_fonts.js"
+                     ));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/font-awesome.min.css",
                       "~/Content/nprogress.css",
                       "~/Content/animate.min.css",
-                      "~/Content/custom.css",
-                      "~/Content/jquery.dataTables.css",
                       "~/Content/dataTables.bootstrap.css",
+                      "~/Content/buttons.bootstrap.min.css",
+                      "~/Content/fixedHeader.bootstrap.css",
+                      "~/Content/responsive.bootstrap.css",
+                      "~/Content/scroller.bootstrap.min.css",
                        "~/Content/MyStyle.css",
-                      "~/Content/site.css"));
+                      "~/Content/custom.css"));
         }
     }
 }
